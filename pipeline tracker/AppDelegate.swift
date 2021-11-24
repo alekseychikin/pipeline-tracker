@@ -10,17 +10,21 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+	var windowProvider: WindowProvider = WindowProvider()
+	var statusBarIcon: StatusBarIcon!
+	var statusBarMenu: StatusBarMenu!
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
-		// Insert code here to initialize your application
+		self.statusBarIcon = StatusBarIcon()
+		self.statusBarMenu = StatusBarMenu(self.windowProvider)
+		self.statusBarIcon.bindMenu(self.statusBarMenu)
+	}
+
+	func application(_ application: NSApplication, open urls: [URL]) {
+		print(urls[0])
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
 		// Insert code here to tear down your application
 	}
-
-
 }
-

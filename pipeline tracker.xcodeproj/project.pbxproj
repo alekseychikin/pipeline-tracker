@@ -7,20 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523F2E78274A2ABB00A3AC91 /* WindowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F2E77274A2ABB00A3AC91 /* WindowProvider.swift */; };
+		523F2E80274A568100A3AC91 /* AuthWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F2E7E274A568100A3AC91 /* AuthWindow.swift */; };
+		523F2E81274A568100A3AC91 /* AuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523F2E7F274A568100A3AC91 /* AuthWindow.xib */; };
+		52BBF3FF274D707800B47323 /* StatusBarMenuItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BBF3FD274D707800B47323 /* StatusBarMenuItemViewController.swift */; };
+		52BBF400274D707800B47323 /* StatusBarMenuItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BBF3FE274D707800B47323 /* StatusBarMenuItemViewController.xib */; };
 		52E66D572735A9AC00B334A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E66D562735A9AC00B334A1 /* AppDelegate.swift */; };
-		52E66D592735A9AC00B334A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E66D582735A9AC00B334A1 /* ViewController.swift */; };
+		52E66D592735A9AC00B334A1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E66D582735A9AC00B334A1 /* SettingsView.swift */; };
 		52E66D5B2735A9B400B334A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E66D5A2735A9B400B334A1 /* Assets.xcassets */; };
 		52E66D5E2735A9B400B334A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E66D5C2735A9B400B334A1 /* Main.storyboard */; };
+		52E66D672735AC5400B334A1 /* StatusBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E66D662735AC5400B334A1 /* StatusBarIcon.swift */; };
+		52E66D692735AFBE00B334A1 /* StatusBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E66D682735AFBE00B334A1 /* StatusBarMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523F2E77274A2ABB00A3AC91 /* WindowProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowProvider.swift; sourceTree = "<group>"; };
+		523F2E7E274A568100A3AC91 /* AuthWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWindow.swift; sourceTree = "<group>"; };
+		523F2E7F274A568100A3AC91 /* AuthWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthWindow.xib; sourceTree = "<group>"; };
+		52BBF3FD274D707800B47323 /* StatusBarMenuItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarMenuItemViewController.swift; sourceTree = "<group>"; };
+		52BBF3FE274D707800B47323 /* StatusBarMenuItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusBarMenuItemViewController.xib; sourceTree = "<group>"; };
 		52E66D532735A9AC00B334A1 /* pipeline tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pipeline tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E66D562735A9AC00B334A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52E66D582735A9AC00B334A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52E66D582735A9AC00B334A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		52E66D5A2735A9B400B334A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E66D5D2735A9B400B334A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E66D5F2735A9B400B334A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52E66D602735A9B400B334A1 /* pipeline_tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pipeline_tracker.entitlements; sourceTree = "<group>"; };
+		52E66D662735AC5400B334A1 /* StatusBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarIcon.swift; sourceTree = "<group>"; };
+		52E66D682735AFBE00B334A1 /* StatusBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523F2E7D274A566A00A3AC91 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				523F2E7E274A568100A3AC91 /* AuthWindow.swift */,
+				523F2E7F274A568100A3AC91 /* AuthWindow.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		52E66D4A2735A9AC00B334A1 = {
 			isa = PBXGroup;
 			children = (
@@ -53,14 +76,28 @@
 		52E66D552735A9AC00B334A1 /* pipeline tracker */ = {
 			isa = PBXGroup;
 			children = (
+				523F2E7D274A566A00A3AC91 /* Auth */,
+				52E66D6E27370CFF00B334A1 /* StatusBarMenu */,
+				523F2E77274A2ABB00A3AC91 /* WindowProvider.swift */,
 				52E66D562735A9AC00B334A1 /* AppDelegate.swift */,
-				52E66D582735A9AC00B334A1 /* ViewController.swift */,
-				52E66D5A2735A9B400B334A1 /* Assets.xcassets */,
+				52E66D582735A9AC00B334A1 /* SettingsView.swift */,
 				52E66D5C2735A9B400B334A1 /* Main.storyboard */,
+				52E66D5A2735A9B400B334A1 /* Assets.xcassets */,
 				52E66D5F2735A9B400B334A1 /* Info.plist */,
 				52E66D602735A9B400B334A1 /* pipeline_tracker.entitlements */,
 			);
 			path = "pipeline tracker";
+			sourceTree = "<group>";
+		};
+		52E66D6E27370CFF00B334A1 /* StatusBarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				52E66D662735AC5400B334A1 /* StatusBarIcon.swift */,
+				52E66D682735AFBE00B334A1 /* StatusBarMenu.swift */,
+				52BBF3FD274D707800B47323 /* StatusBarMenuItemViewController.swift */,
+				52BBF3FE274D707800B47323 /* StatusBarMenuItemViewController.xib */,
+			);
+			path = StatusBarMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,7 +127,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Aleksei Chikin";
 				TargetAttributes = {
 					52E66D522735A9AC00B334A1 = {
@@ -121,7 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BBF400274D707800B47323 /* StatusBarMenuItemViewController.xib in Resources */,
 				52E66D5B2735A9B400B334A1 /* Assets.xcassets in Resources */,
+				523F2E81274A568100A3AC91 /* AuthWindow.xib in Resources */,
 				52E66D5E2735A9B400B334A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E66D592735A9AC00B334A1 /* ViewController.swift in Sources */,
+				523F2E78274A2ABB00A3AC91 /* WindowProvider.swift in Sources */,
+				52E66D692735AFBE00B334A1 /* StatusBarMenu.swift in Sources */,
+				52E66D672735AC5400B334A1 /* StatusBarIcon.swift in Sources */,
+				52E66D592735A9AC00B334A1 /* SettingsView.swift in Sources */,
+				52BBF3FF274D707800B47323 /* StatusBarMenuItemViewController.swift in Sources */,
+				523F2E80274A568100A3AC91 /* AuthWindow.swift in Sources */,
 				52E66D572735A9AC00B334A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +222,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -238,6 +283,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "pipeline tracker/pipeline_tracker.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "pipeline tracker/Info.plist";
@@ -277,6 +324,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.alekseychikin.pipline-tracker.pipeline-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -288,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "pipeline tracker/pipeline_tracker.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "pipeline tracker/Info.plist";
@@ -295,6 +344,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.alekseychikin.pipline-tracker.pipeline-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

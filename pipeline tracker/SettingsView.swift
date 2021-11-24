@@ -8,10 +8,13 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class SettingsView: NSViewController {
+	public var isOpen = false
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		self.isOpen = true
 
 		// Do any additional setup after loading the view.
 	}
@@ -22,6 +25,10 @@ class ViewController: NSViewController {
 		}
 	}
 
+	override func viewDidDisappear() {
+		super.viewDidDisappear()
 
+		print("viewDidDisappear")
+		self.isOpen = false
+	}
 }
-
